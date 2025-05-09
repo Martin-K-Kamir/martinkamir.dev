@@ -3,6 +3,7 @@ import countriesImage from "@/assets/images/countries-preview.png";
 import forkifyImage from "@/assets/images/forkify-preview.png";
 import theCabsImage from "@/assets/images/the-cabs-preview.png";
 import theCabsAdminImage from "@/assets/images/the-cabs-admin-preview.png";
+import { Link } from "lucide-react";
 
 export const projects = [
     {
@@ -15,15 +16,22 @@ export const projects = [
         },
         badges: [
             "React",
-            "Redux",
-            "React Query",
-            "React Router",
-            "Javascript",
+            "Nextjs",
             "Typescript",
-            "SCSS",
+            "TanStack Query",
+            "Zod",
+            "Zustand",
             "Tailwind CSS",
+            "Shadcn UI",
         ],
-        href: "https://the-cabs.vercel.app",
+        url: "https://the-cabs.vercel.app",
+        otherUrls: [
+            {
+                href: "https://github.com/Martin-K-Kamir/the-cabs",
+                label: "Repository",
+                icon: <Link />,
+            },
+        ],
     },
     {
         title: "The Cabs Admin",
@@ -36,15 +44,23 @@ export const projects = [
         badges: [
             "React",
             "Typescript",
-            "Tailwind CSS",
-            "Tanstack Query",
+            "TanStack Query",
             "React Router",
-            "Zustand",
+            "React Hook Form",
             "Zod",
+            "Zustand",
+            "Tailwind CSS",
             "Shadcn UI",
             "Vite",
         ],
-        href: "https://the-cabs-admin.vercel.app",
+        url: "https://the-cabs-admin.vercel.app",
+        otherUrls: [
+            {
+                href: "https://github.com/Martin-K-Kamir/the-cabs-admin",
+                label: "Repository",
+                icon: <Link />,
+            },
+        ],
     },
     {
         title: "Calendar",
@@ -64,7 +80,14 @@ export const projects = [
             "Vitest",
             "React Testing Library",
         ],
-        href: "https://thecabs.com",
+        url: "https://calendar-clone-mkk.netlify.app",
+        otherUrls: [
+            {
+                href: "https://github.com/Martin-K-Kamir/calendar",
+                label: "Repository",
+                icon: <Link />,
+            },
+        ],
     },
     {
         title: "Countries",
@@ -81,7 +104,14 @@ export const projects = [
             "Tailwind CSS",
             "Vite",
         ],
-        href: "https://thecabs.com",
+        url: "https://countries-martinkamir.netlify.app",
+        otherUrls: [
+            {
+                href: "https://github.com/Martin-K-Kamir/frontend-mentor-countries",
+                label: "Repository",
+                icon: <Link />,
+            },
+        ],
     },
     {
         title: "Forkify",
@@ -92,7 +122,14 @@ export const projects = [
             alt: "Forkify",
         },
         badges: ["React", "Redux & RTK Query", "React Router", "CSS", "Vite"],
-        href: "https://thecabs.com",
+        url: "https://forkify-martinkamir.netlify.app",
+        otherUrls: [
+            {
+                href: "https://github.com/Martin-K-Kamir/forkify",
+                label: "Repository",
+                icon: <Link />,
+            },
+        ],
     },
 ];
 
@@ -104,16 +141,39 @@ export const jobs = [
         dateRange: {
             from: new Date("2021-11-01"),
         },
-        href: "https://rondo.com",
         badges: [
             "React",
             "Redux",
-            "React Query",
             "React Router",
             "Javascript",
             "Typescript",
             "SCSS",
             "Tailwind CSS",
+        ],
+        url: "https://www.rondo.cz",
+    },
+    {
+        title: "Frontend Developer · IQ Group",
+        description:
+            "Built the front-end for a custom IQ testing platform, focusing on performance, usability, and clear presentation of complex test flows. Delivered the project end-to-end in close collaboration with designers and backend developers.",
+        dateRange: {
+            from: new Date("2025-02-01"),
+            to: new Date("2025-05-01"),
+        },
+        url: "https://iq-test.cz",
+        badges: [
+            "React",
+            "Typescript",
+            "TanStack Query",
+            "React Router",
+            "React Hook Form",
+            "Zod",
+            "Tailwind CSS",
+            "Shadcn UI",
+            "Vite",
+            "Cypress",
+            "Vitest",
+            "React Testing Library",
         ],
     },
 ];

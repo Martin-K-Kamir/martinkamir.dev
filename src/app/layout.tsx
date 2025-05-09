@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { CursorGlow } from "@/components/cursor-glow";
 
 const geistSans = Inter({
     variable: "--font-inter",
@@ -18,10 +19,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" className="scroll-smooth">
             <body
-                className={`${geistSans.variable}  antialiased min-h-svh bg-zinc-950 text-zinc-50`}
+                className={`${geistSans.variable} bg-zinc-950 text-zinc-50 antialiased`}
             >
+                <CursorGlow />
                 {children}
             </body>
         </html>

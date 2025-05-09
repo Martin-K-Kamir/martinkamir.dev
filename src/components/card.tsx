@@ -76,19 +76,8 @@ export function CardImage({
 export function CardDateRange({
     dateRange: { from, to },
     ...props
-}: { dateRange: DateRange } & Omit<React.ComponentProps<"time">, "children">) {
-    return (
-        <time
-            dateTime={
-                to
-                    ? `${from.toISOString()}/${to.toISOString()}`
-                    : from.toISOString()
-            }
-            {...props}
-        >
-            {formatJobDateRange({ from, to })}
-        </time>
-    );
+}: { dateRange: DateRange } & Omit<React.ComponentProps<"p">, "children">) {
+    return <p {...props}>{formatJobDateRange({ from, to })}</p>;
 }
 
 export function CardContent({
@@ -123,7 +112,11 @@ export function CardTitle({
             <Comp>
                 <a
                     href={href}
-                    className={cn(classNameTitle, "group/link", className)}
+                    className={cn(
+                        classNameTitle,
+                        "group/link outline-offset-4 outline-zinc-100/95 focus-visible:outline-2",
+                        className,
+                    )}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={ariaLabel}
@@ -149,27 +142,77 @@ export function CardDescription({
     ...props
 }: React.ComponentProps<"p">) {
     return (
-        <p className={cn("text-sm text-zinc-300/95", className)} {...props} />
+        <p
+            className={cn("text-sm text-pretty text-zinc-300/95", className)}
+            {...props}
+        />
     );
 }
 
 export function CardBadges({
     className,
     classNameItem,
-    data,
+    badges,
     ...props
 }: Omit<React.ComponentProps<"ul">, "children"> & {
     classNameItem?: string;
-    data: readonly string[];
+    badges: readonly string[];
 }) {
     return (
         <ul
             className={cn("flex flex-wrap gap-x-2 gap-y-3", className)}
+            aria-label="technologies used"
             {...props}
         >
-            {data.map(badge => (
+            {badges.map(badge => (
                 <li key={badge} className={classNameItem}>
                     <Badge>{badge}</Badge>
+                </li>
+            ))}
+        </ul>
+    );
+}
+
+type LinkEntry = {
+    icon?: React.ReactNode;
+    href: string;
+    label: string;
+};
+
+export function CardLinks({
+    className,
+    classNameItem,
+    urls,
+    ...props
+}: Omit<React.ComponentProps<"ul">, "children"> & {
+    classNameItem?: string;
+    urls: readonly (string | LinkEntry)[];
+}) {
+    return (
+        <ul
+            className={cn("relative z-10", className)}
+            aria-label="related links"
+            {...props}
+        >
+            {urls.map(url => (
+                <li key={typeof url === "string" ? url : url.label}>
+                    <a
+                        href={typeof url === "string" ? url : url.href}
+                        className={cn(
+                            "transition-100 inline-flex items-center gap-1.5 text-sm font-medium text-zinc-200 outline-offset-4 outline-zinc-100/95 transition-colors hover:text-indigo-300 focus-visible:text-indigo-300 focus-visible:outline-2 [&>svg]:size-3",
+                            classNameItem,
+                        )}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={
+                            typeof url === "string"
+                                ? `View ${url} (opens in new tab)`
+                                : `View ${url.label} (opens in new tab)`
+                        }
+                    >
+                        {typeof url !== "string" && url.icon}
+                        {typeof url === "string" ? url : url.label}
+                    </a>
                 </li>
             ))}
         </ul>
@@ -179,7 +222,7 @@ export function CardBadges({
 export type SimpleCardProps = {
     title: string;
     description: string;
-    href?: string;
+    url?: string;
     image?: {
         src: string | StaticImageData;
         alt?: string;
@@ -188,6 +231,7 @@ export type SimpleCardProps = {
         from: Date;
         to?: Date;
     };
+    otherUrls?: readonly (string | LinkEntry)[];
     badges: readonly string[];
 } & React.ComponentProps<"article">;
 
@@ -196,7 +240,8 @@ export function SimpleCard({
     description,
     dateRange,
     badges,
-    href,
+    url,
+    otherUrls,
     image,
     ...props
 }: SimpleCardProps) {
@@ -212,15 +257,16 @@ export function SimpleCard({
 
             <CardContent>
                 <CardTitle
-                    href={href}
-                    {...(href && {
-                        "aria-label": `View ${title} (open in new tab)`,
+                    href={url}
+                    {...(url && {
+                        "aria-label": `View ${title} (opens in new tab)`,
                     })}
                 >
                     {title}
                 </CardTitle>
                 <CardDescription>{description}</CardDescription>
-                <CardBadges data={badges} className="mt-4" />
+                {otherUrls && <CardLinks urls={otherUrls} className="mt-3" />}
+                <CardBadges badges={badges} className="mt-4" />
             </CardContent>
 
             {image && <CardImage src={image.src} alt={image.alt ?? ""} />}
