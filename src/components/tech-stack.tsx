@@ -16,7 +16,7 @@ const items = [
         srOnly: "React",
         tooltipContent: (
             <p>
-                <span className="font-medium">React</span> - My go to for
+                <span className="font-medium">React</span> - My go-to for
                 building interactive, component driven UIs.
             </p>
         ),
@@ -26,8 +26,8 @@ const items = [
         srOnly: "Typescript",
         tooltipContent: (
             <p>
-                <span className="font-medium">Typescript</span> - Makes
-                development smoother, more reliable, and way less error prone.
+                <span className="font-medium">Typescript</span> - Can't live
+                without it. The DX is just unmatched.
             </p>
         ),
     },
@@ -56,8 +56,8 @@ const items = [
         srOnly: "Tanstack Query",
         tooltipContent: (
             <p>
-                <span className="font-medium">TanStack Query</span> - There's no
-                other solution. This is the best way to handle data fetching.
+                <span className="font-medium">TanStack Query</span> - This is
+                the best way to handle data fetching.
             </p>
         ),
     },
@@ -67,7 +67,7 @@ const items = [
         tooltipContent: (
             <p>
                 <span className="font-medium">Vite</span> - I love building SPAs
-                with Vite, makes it fast and smooth every time.
+                with Vite, makes it fast and smooth.
             </p>
         ),
     },
@@ -86,9 +86,8 @@ const items = [
         srOnly: "Cypress",
         tooltipContent: (
             <p>
-                <span className="font-medium">Cypress</span> -{" "}
-                <span className="text-nowrap">End-to-end</span> testing made
-                effortless. Cypress is fast, reliable, and fun.
+                <span className="font-medium">Cypress</span> - Makes testing
+                fun. Watching tests run in real time is so satisfying.
             </p>
         ),
     },
@@ -97,8 +96,8 @@ const items = [
         srOnly: "Vitest",
         tooltipContent: (
             <p>
-                <span className="font-medium">Vitest</span> - Unit testing made
-                fast and simple.
+                <span className="font-medium">Vitest</span> - Simple, fast, and
+                just feels great to use.
             </p>
         ),
     },
@@ -111,7 +110,7 @@ export function TechStack({
     return (
         <ul
             className={cn(
-                "flex gap-3 [&_svg]:size-6 [&_svg]:fill-zinc-50",
+                "flex flex-wrap gap-3 [&_svg]:size-6 [&_svg]:fill-zinc-50",
                 className,
             )}
             aria-label="Favorite technologies"
@@ -120,8 +119,6 @@ export function TechStack({
             {items.map(item => (
                 <li key={item.srOnly} className="flex items-center gap-2">
                     <SimpleTooltip
-                        delayDuration={0}
-                        skipDelayDuration={0}
                         content={item.tooltipContent}
                         contentProps={{
                             side: "bottom",

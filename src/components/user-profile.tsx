@@ -23,36 +23,41 @@ export function UserProfile({
     ...props
 }: Omit<React.ComponentProps<"div">, "children">) {
     return (
-        <div className={cn("flex items-center gap-10", className)} {...props}>
+        <div className={cn("flex items-center gap-6", className)} {...props}>
             <Image
                 src={me}
-                className="aspect-square w-12 rounded-full object-cover"
+                className="aspect-square w-10 rounded-full object-cover"
                 alt="Martin Kamír"
-                width={96}
-                height={96}
+                width={80}
+                height={80}
                 placeholder="blur"
                 loading="lazy"
                 quality={95}
             />
 
-            <ul className="flex gap-6" aria-label="Social media links">
-                {links.map(link => (
-                    <li key={link.label}>
-                        <a
-                            href={link.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-3 text-sm font-medium text-zinc-100/95 outline-offset-4 outline-zinc-100/95 transition-colors hover:underline focus-visible:outline-2 [&>svg]:size-4"
-                            aria-label={`View ${link.label} (opens in new tab)`}
-                        >
-                            {link.icon}
-                            <span>{link.label}</span>
-                        </a>
-                    </li>
-                ))}
-            </ul>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
+                <ul
+                    className="flex gap-6 lg:gap-4"
+                    aria-label="Social media links"
+                >
+                    {links.map(link => (
+                        <li key={link.label}>
+                            <a
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-3 text-sm font-medium text-zinc-100/95 outline-offset-4 outline-zinc-100/95 transition-colors hover:underline focus-visible:outline-2 [&>svg]:size-4"
+                                aria-label={`View ${link.label} (opens in new tab)`}
+                            >
+                                {link.icon}
+                                <span>{link.label}</span>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
 
-            <LangSelect />
+                <LangSelect className="hidden lg:flex" />
+            </div>
         </div>
     );
 }

@@ -9,7 +9,7 @@ export function Card({ className, ...props }: React.ComponentProps<"article">) {
         <article
             {...props}
             className={cn(
-                "group transition-100 relative grid grid-cols-[14ch_1fr] gap-6 transition-opacity lg:group-hover/list:opacity-50 lg:hover:!opacity-100",
+                "group transition-100 relative grid gap-2 transition-opacity sm:grid-cols-[14ch_1fr] sm:gap-6 lg:group-hover/list:opacity-50 lg:hover:!opacity-100",
                 className,
             )}
         />
@@ -24,7 +24,7 @@ export function CardHeader({
         <header
             {...props}
             className={cn(
-                "col-start-1 py-0.5 text-xs font-semibold text-zinc-400/95 uppercase",
+                "py-0.5 text-xs font-semibold text-zinc-400/95 uppercase sm:col-start-1",
                 className,
             )}
         />
@@ -57,7 +57,7 @@ export function CardImage({
     return (
         <Image
             className={cn(
-                "transition-100 col-start-1 row-start-1 aspect-video rounded-lg border-2 border-zinc-800 object-cover transition group-hover:border-zinc-700 motion-reduce:transition-none",
+                "transition-100 aspect-video w-48 rounded-lg border-2 border-zinc-800 object-cover transition motion-reduce:transition-none sm:col-start-1 sm:row-start-1 sm:w-auto lg:group-hover:border-zinc-700",
                 className,
             )}
             src={src}
@@ -85,7 +85,7 @@ export function CardContent({
     ...props
 }: React.ComponentProps<"div">) {
     return (
-        <div className={cn("col-start-2 space-y-2", className)} {...props} />
+        <div className={cn("space-y-2 sm:col-start-2", className)} {...props} />
     );
 }
 
@@ -269,7 +269,13 @@ export function SimpleCard({
                 <CardBadges badges={badges} className="mt-4" />
             </CardContent>
 
-            {image && <CardImage src={image.src} alt={image.alt ?? ""} />}
+            {image && (
+                <CardImage
+                    src={image.src}
+                    alt={image.alt ?? ""}
+                    className="mt-4 sm:mt-0"
+                />
+            )}
         </Card>
     );
 }
