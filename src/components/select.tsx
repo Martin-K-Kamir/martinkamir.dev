@@ -19,17 +19,9 @@ function SelectGroup({
 }
 
 function SelectValue({
-    defaultValue,
     ...props
-}: React.ComponentProps<typeof SelectPrimitive.Value> & {
-    defaultValue?: string;
-}) {
-    return (
-        <SelectPrimitive.Value
-            data-slot="select-value"
-            {...props}
-        ></SelectPrimitive.Value>
-    );
+}: React.ComponentProps<typeof SelectPrimitive.Value>) {
+    return <SelectPrimitive.Value data-slot="select-value" {...props} />;
 }
 
 function SelectTrigger({
@@ -45,7 +37,7 @@ function SelectTrigger({
             data-slot="select-trigger"
             data-size={size}
             className={cn(
-                "flex w-fit cursor-pointer items-center justify-between gap-2 rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-2 text-xs whitespace-nowrap text-zinc-100/95 shadow-xs transition-[color,box-shadow] outline-none hover:bg-zinc-800/60 focus-visible:ring-2 focus-visible:ring-zinc-300 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-red-900 aria-invalid:ring-red-900/40 data-[placeholder]:text-zinc-400 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-zinc-300",
+                "shadow-xs aria-invalid:border-red-900 aria-invalid:ring-red-900/40 flex w-fit cursor-pointer items-center justify-between gap-2 whitespace-nowrap rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-2 text-xs text-zinc-100/95 outline-none transition-[color,box-shadow] hover:bg-zinc-800/60 focus-visible:ring-2 focus-visible:ring-zinc-300 disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 data-[placeholder]:text-zinc-400 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-zinc-300 [&_svg]:pointer-events-none [&_svg]:shrink-0",
                 className,
             )}
             {...props}
@@ -69,7 +61,7 @@ function SelectContent({
             <SelectPrimitive.Content
                 data-slot="select-content"
                 className={cn(
-                    "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 relative max-h-(--radix-select-content-available-height) min-w-[8rem] origin-(--radix-select-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-lg border border-zinc-800 bg-zinc-950 text-zinc-100/95 shadow-md",
+                    "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 max-h-(--radix-select-content-available-height) origin-(--radix-select-content-transform-origin) relative min-w-[8rem] overflow-y-auto overflow-x-hidden rounded-lg border border-zinc-800 bg-zinc-950 text-zinc-100/95 shadow-md",
                     position === "popper" &&
                         "data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1",
                     className,
@@ -115,7 +107,7 @@ function SelectItem({
         <SelectPrimitive.Item
             data-slot="select-item"
             className={cn(
-                "relative flex w-full cursor-default items-center gap-2 rounded-md px-2 py-1.5 text-xs outline-hidden select-none focus:bg-zinc-800/80 focus:text-zinc-50 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-zinc-300 *:[span]:last:flex *:[span]:last:items-center *:[span]:last:gap-2",
+                "outline-hidden *:[span]:last:flex *:[span]:last:items-center *:[span]:last:gap-2 relative flex w-full cursor-default select-none items-center gap-2 rounded-md px-2 py-1.5 text-xs focus:bg-zinc-800/80 focus:text-zinc-50 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='text-'])]:text-zinc-300 [&_svg]:pointer-events-none [&_svg]:shrink-0",
                 className,
             )}
             {...props}

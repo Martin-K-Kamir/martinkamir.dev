@@ -1,12 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
 import { cn } from "@/utils";
+import { useTranslations } from "next-intl";
 
 const items = [
-    { href: "#about", label: "About" },
-    { href: "#experience", label: "Experience" },
-    { href: "#projects", label: "Projects" },
-];
+    { href: "#about", labelKey: "about" },
+    { href: "#experience", labelKey: "experience" },
+    { href: "#projects", labelKey: "projects" },
+] as const;
 
 export function Navigation({
     className,
@@ -18,6 +19,7 @@ export function Navigation({
     classNameItem?: string;
 }) {
     const [activeId, setActiveId] = useState("#about");
+    const t = useTranslations("nav");
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -53,7 +55,7 @@ export function Navigation({
 
     return (
         <nav
-            aria-label="In-page jump links"
+            aria-label={t("aria_label")}
             className={cn("hidden lg:block", className)}
             {...props}
         >
@@ -62,7 +64,7 @@ export function Navigation({
                     const isActive = activeId === item.href;
 
                     return (
-                        <li key={item.label}>
+                        <li key={item.labelKey}>
                             <a
                                 href={item.href}
                                 className={cn(
@@ -79,7 +81,7 @@ export function Navigation({
                                         isActive ? "w-16 bg-zinc-100" : "w-8",
                                     )}
                                 />
-                                <span>{item.label}</span>
+                                <span>{t(item.labelKey)}</span>
                             </a>
                         </li>
                     );

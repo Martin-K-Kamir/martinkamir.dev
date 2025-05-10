@@ -3,13 +3,14 @@ import Image, { type StaticImageData } from "next/image";
 import { cn, formatJobDateRange } from "@/utils";
 import { Badge } from "@/components/badge";
 import type { DateRange } from "@/types";
+import { useTranslations, useLocale } from "next-intl";
 
 export function Card({ className, ...props }: React.ComponentProps<"article">) {
     return (
         <article
             {...props}
             className={cn(
-                "group transition-100 relative grid gap-2 transition-opacity sm:grid-cols-[14ch_1fr] sm:gap-6 lg:group-hover/list:opacity-50 lg:hover:!opacity-100",
+                "transition-100 group relative grid gap-2 transition-opacity sm:grid-cols-[14ch_1fr] sm:gap-6 lg:hover:!opacity-100 lg:group-hover/list:opacity-50",
                 className,
             )}
         />
@@ -24,7 +25,7 @@ export function CardHeader({
         <header
             {...props}
             className={cn(
-                "py-0.5 text-xs font-semibold text-zinc-400/95 uppercase sm:col-start-1",
+                "py-0.5 text-xs font-semibold uppercase text-zinc-400/95 sm:col-start-1",
                 className,
             )}
         />
@@ -54,6 +55,8 @@ export function CardImage({
 }: React.ComponentProps<typeof Image> & {
     src: string | StaticImageData;
 }) {
+    const t = useTranslations("other");
+
     return (
         <Image
             className={cn(
@@ -61,7 +64,7 @@ export function CardImage({
                 className,
             )}
             src={src}
-            alt={alt ?? ""}
+            alt={alt ? `${alt} ${t("preview_image")}` : ""}
             aria-hidden={alt ? false : true}
             width={400}
             height={300}
@@ -77,7 +80,19 @@ export function CardDateRange({
     dateRange: { from, to },
     ...props
 }: { dateRange: DateRange } & Omit<React.ComponentProps<"p">, "children">) {
-    return <p {...props}>{formatJobDateRange({ from, to })}</p>;
+    const locale = useLocale();
+    const t = useTranslations("other");
+
+    return (
+        <p {...props}>
+            {formatJobDateRange({
+                from,
+                to,
+                locale: locale === "cs" ? "cs" : "en",
+                present: t("present"),
+            })}
+        </p>
+    );
 }
 
 export function CardContent({
@@ -122,7 +137,7 @@ export function CardTitle({
                     aria-label={ariaLabel}
                 >
                     {children}{" "}
-                    <ArrowUpRightIcon className="ml-0.5 inline-block size-4 translate-y-px transition-transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-focus-visible/link:translate-x-1 group-focus-visible/link:-translate-y-1 motion-reduce:transition-none" />
+                    <ArrowUpRightIcon className="ml-0.5 inline-block size-4 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
                     <span className="absolute -inset-6 hidden rounded lg:block"></span>
                 </a>
             </Comp>
@@ -143,7 +158,7 @@ export function CardDescription({
 }: React.ComponentProps<"p">) {
     return (
         <p
-            className={cn("text-sm text-pretty text-zinc-300/95", className)}
+            className={cn("text-pretty text-sm text-zinc-300/95", className)}
             {...props}
         />
     );
@@ -158,10 +173,12 @@ export function CardBadges({
     classNameItem?: string;
     badges: readonly string[];
 }) {
+    const t = useTranslations("other");
+
     return (
         <ul
             className={cn("flex flex-wrap gap-x-2 gap-y-3", className)}
-            aria-label="technologies used"
+            aria-label={t("related_badges")}
             {...props}
         >
             {badges.map(badge => (
@@ -176,6 +193,8 @@ export function CardBadges({
 type LinkEntry = {
     icon?: React.ReactNode;
     href: string;
+    namespace?: string;
+    intlKey?: string;
     label: string;
 };
 
@@ -188,38 +207,49 @@ export function CardLinks({
     classNameItem?: string;
     urls: readonly (string | LinkEntry)[];
 }) {
+    const t = useTranslations();
+
     return (
         <ul
             className={cn("relative z-10", className)}
-            aria-label="related links"
+            aria-label={t("other.related_links")}
             {...props}
         >
-            {urls.map(url => (
-                <li key={typeof url === "string" ? url : url.label}>
-                    <a
-                        href={typeof url === "string" ? url : url.href}
-                        className={cn(
-                            "transition-100 inline-flex items-center gap-1.5 text-sm font-medium text-zinc-200 outline-offset-4 outline-zinc-100/95 transition-colors hover:text-indigo-300 focus-visible:text-indigo-300 focus-visible:outline-2 [&>svg]:size-3",
-                            classNameItem,
-                        )}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={
-                            typeof url === "string"
-                                ? `View ${url} (opens in new tab)`
-                                : `View ${url.label} (opens in new tab)`
-                        }
-                    >
-                        {typeof url !== "string" && url.icon}
-                        {typeof url === "string" ? url : url.label}
-                    </a>
-                </li>
-            ))}
+            {urls.map(url => {
+                /* eslint-disable @typescript-eslint/no-explicit-any */
+                const transLabel = (
+                    typeof url !== "string" && url.namespace && url.intlKey
+                        ? t(`${url.namespace}.${url.intlKey}` as any)
+                        : url
+                ) as string;
+
+                return (
+                    <li key={typeof url === "string" ? url : url.label}>
+                        <a
+                            href={typeof url === "string" ? url : url.href}
+                            className={cn(
+                                "transition-100 inline-flex items-center gap-1.5 text-sm font-medium text-zinc-200 outline-offset-4 outline-zinc-100/95 transition-colors hover:text-indigo-300 focus-visible:text-indigo-300 focus-visible:outline-2 [&>svg]:size-3",
+                                classNameItem,
+                            )}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={t("other.opens_new_tab", {
+                                label: transLabel,
+                            })}
+                        >
+                            {typeof url !== "string" && url.icon}
+                            {transLabel}
+                        </a>
+                    </li>
+                );
+            })}
         </ul>
     );
 }
 
 export type SimpleCardProps = {
+    intlKey?: string;
+    namespace?: string;
     title: string;
     description: string;
     url?: string;
@@ -236,6 +266,8 @@ export type SimpleCardProps = {
 } & React.ComponentProps<"article">;
 
 export function SimpleCard({
+    intlKey,
+    namespace,
     title,
     description,
     dateRange,
@@ -245,6 +277,20 @@ export function SimpleCard({
     image,
     ...props
 }: SimpleCardProps) {
+    const t = useTranslations();
+
+    /* eslint-disable @typescript-eslint/no-explicit-any */
+    const transTitle =
+        namespace && intlKey
+            ? t(`${namespace}.${intlKey}.title` as any)
+            : title;
+
+    /* eslint-disable @typescript-eslint/no-explicit-any */
+    const transDescription =
+        namespace && intlKey
+            ? t(`${namespace}.${intlKey}.description` as any)
+            : description;
+
     return (
         <Card {...props}>
             {dateRange && (
@@ -259,12 +305,15 @@ export function SimpleCard({
                 <CardTitle
                     href={url}
                     {...(url && {
-                        "aria-label": `View ${title} (opens in new tab)`,
+                        "aria-label": t("other.opens_new_tab", {
+                            label: transTitle,
+                        }),
                     })}
                 >
-                    {title}
+                    {transTitle}
                 </CardTitle>
-                <CardDescription>{description}</CardDescription>
+
+                <CardDescription>{transDescription}</CardDescription>
                 {otherUrls && <CardLinks urls={otherUrls} className="mt-3" />}
                 <CardBadges badges={badges} className="mt-4" />
             </CardContent>

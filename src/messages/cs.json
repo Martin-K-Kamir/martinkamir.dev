@@ -1,0 +1,124 @@
+{
+    "page": {
+        "hero": {
+            "title": "Martin Kamír",
+            "subtitle": "Front End Developer",
+            "description": "Stavím <responsive>responzivní</responsive>, <typesafe>type-safe</typesafe> && <fast>extrémně rychlé</fast> webové aplikace."
+        },
+        "about": {
+            "title": "O mně",
+            "description": {
+                "p1": "Jsem vývojář s vášní pro tvorbu krásných a funkčních webových aplikací. Moje cesta začala jednoduchou HTML stránkou a od té doby se neustále učím, experimentuji a snažím se tvořit skvělé věci.",
+                "p2": "Aktuálně pracuji ve firmě",
+                "p3": "Začínal jsem jako junior a díky praktickým zkušenostem a náročným výzvám jsem hodně vyrostl.",
+                "p4": "Tady jsou nástroje, které mě teď nejvíc baví:"
+            }
+        },
+        "experience": {
+            "title": "Zkušenosti"
+        },
+        "projects": {
+            "title": "Projekty"
+        },
+        "other": {
+            "skip_to_content": "Přeskočit na obsah"
+        }
+    },
+    "nav": {
+        "about": "O mně",
+        "experience": "Zkušenosti",
+        "projects": "Projekty",
+        "aria_label": "Odkazy pro přeskok na stránce"
+    },
+    "tech_stack": {
+        "react": {
+            "title": "React",
+            "description": "Moje oblíbená knihovna pro tvorbu interaktivního a komponentového UI."
+        },
+        "typescript": {
+            "title": "Typescript",
+            "description": "Nemůžu bez něj být. Developer experience je bezkonkurenční."
+        },
+        "nextjs": {
+            "title": "Next.js",
+            "description": "Síla Reactu bez zbytečných starostí."
+        },
+        "tailwindcss": {
+            "title": "Tailwind",
+            "description": "Vyzkoušel jsem všechny přístupy ke stylování. Tailwind prostě funguje a dobře škáluje."
+        },
+        "tanstack_query": {
+            "title": "TanStack Query",
+            "description": "Nejlepší způsob, jak řešit získávání dat."
+        },
+        "vite": {
+            "title": "Vite",
+            "description": "Rád stavím SPAčka s Vite – je to rychlé a plynulé."
+        },
+        "zustand": {
+            "title": "Zustand",
+            "description": "Nejjednodušší způsob správy stavu – žádná zbytečná složitost."
+        },
+        "cypress": {
+            "title": "Cypress",
+            "description": "Testování je s ním zábava. Sledovat běh testů v reálném čase je prostě skvělé."
+        },
+        "vitest": {
+            "title": "Vitest",
+            "description": "Jednoduchý, rychlý a příjemný na používání."
+        },
+        "aria_label": "Oblíbené technologie"
+    },
+    "experiences": {
+        "rondo": {
+            "title": "Frontend Developer · Rondo",
+            "description": "Navrhuji a vyvíjím klíčové části uživatelského rozhraní napříč produktem se zaměřením na výkon a uživatelskou zkušenost. Spolupracuji s designéry, backend vývojáři a produktovými manažery na doručení promyšlených a kvalitních řešení, která podporují uživatele i obchodní cíle."
+        },
+        "iq_group": {
+            "title": "Frontend Developer · IQ Group",
+            "description": "Postavil jsem frontend pro vlastní platformu pro IQ testování se zaměřením na výkon, použitelnost a přehledné zobrazení komplexních testovacích toků. Projekt jsem doručil end-to-end ve spolupráci s designéry a backend vývojáři."
+        }
+    },
+    "projects": {
+        "the_cabs": {
+            "title": "The Cabs",
+            "description": "Webová aplikace pro objevování a rezervaci unikátních kabin. Nabízí plynulé procházení nabídek, správu rezervací a bezproblémový proces od začátku do konce."
+        },
+        "the_cabs_admin": {
+            "title": "The Cabs Admin",
+            "description": "Administrační aplikace pro správu kabin, rezervací a přehledy platformy. Nabízí kompletní CRUD funkcionalitu a přehledné statistiky pro efektivní provoz."
+        },
+        "calendar": {
+            "title": "Calendar",
+            "description": "Jednoduchá kalendářová aplikace. Uživatelé mohou vytvářet, upravovat a mazat události přes čisté a intuitivní rozhraní."
+        },
+        "countries": {
+            "title": "Countries",
+            "description": "Webová aplikace pro objevování zemí po celém světě. Uživatelé mohou procházet úplný seznam států, hledat podle jména, filtrovat podle regionu a zobrazit podrobné informace jako je populace, hlavní město, měny, jazyky a sousední státy."
+        },
+        "forkify": {
+            "title": "Forkify",
+            "description": "Aplikace s recepty pro vyhledávání, prohlížení a ukládání oblíbených jídel. Uživatelé mohou procházet různé recepty, zobrazit si podrobné postupy a ingredience a ukládat si oblíbené pro pozdější použití."
+        }
+    },
+    "other": {
+        "portrait": "Portrét",
+        "opens_new_tab": "Zobrazit {label} (otevře se v nové záložce)",
+        "repository": "Repozitář",
+        "preview_image": "Náhledový obrázek",
+        "present": "současnost",
+        "social_media_links": "Odkazy na sociální sítě",
+        "related_links": "Související odkazy",
+        "related_badges": "Související odznaky"
+    },
+    "metadata": {
+        "title": "Martin Kamír",
+        "description": "Stavím responzivní, type-safe a extrémně rychlé webové aplikace. Aktuálně pracuji v Rondo."
+    },
+    "error": {
+        "500": {
+            "description": "Můj spaghetti kód nefunguje správně. <br/> Zkuste to prosím později.",
+            "button": "Zkusit znovu"
+        }
+    }
+}

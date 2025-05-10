@@ -13,7 +13,7 @@ export function formatJobDateRange({
     to,
     present = "Present",
     locale = "en",
-}: DateRange & { present?: string; locale?: "en" | "cz" }): string {
+}: DateRange & { present?: string; locale?: "en" | "cs" }): string {
     const fromYear = from.getFullYear();
     const toYear = to?.getFullYear();
 
@@ -26,10 +26,10 @@ export function formatJobDateRange({
     }
 
     const fromMonth = format(from, "MMM", {
-        locale: locale === "en" ? enUS : cs,
+        locale: locale === "cs" ? cs : enUS,
     }).toLowerCase();
     const toMonth = format(to, "MMM", {
-        locale: locale === "en" ? enUS : cs,
+        locale: locale === "cs" ? cs : enUS,
     }).toLowerCase();
     return `${fromMonth} — ${toMonth} ${fromYear}`;
 }

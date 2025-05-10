@@ -44,7 +44,7 @@ export function ImageHoverReveal({
                 alt=""
                 aria-hidden
                 className={cn(
-                    "pointer-events-none absolute aspect-square w-38 max-w-max -translate-y-1 transition-opacity duration-100",
+                    "w-38 pointer-events-none absolute aspect-square max-w-max -translate-y-1 transition-opacity duration-100",
                     coords.visible ? "opacity-100" : "opacity-0",
                 )}
                 style={{
@@ -52,6 +52,7 @@ export function ImageHoverReveal({
                     top: coords.y,
                     transform: "translate(-50%, -100%)",
                 }}
+                unoptimized
             />
             {children}
         </span>
