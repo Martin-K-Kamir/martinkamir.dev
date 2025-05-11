@@ -91,7 +91,11 @@ export default function Page() {
                         </h2>
                     </StickyHeader>
 
-                    <CardList data={experiences} as="ol" className="mt-4" />
+                    <CardList
+                        data={experiences}
+                        as="ol"
+                        className="mt-4 min-h-[476px]"
+                    />
                 </section>
 
                 <section className="scroll-mt-24" id="projects">
@@ -101,7 +105,11 @@ export default function Page() {
                         </h2>
                     </StickyHeader>
 
-                    <CardList data={projects} as="ol" className="mt-4" />
+                    <CardList
+                        data={projects}
+                        as="ol"
+                        className="mt-4 min-h-[1236px]"
+                    />
                 </section>
             </main>
 

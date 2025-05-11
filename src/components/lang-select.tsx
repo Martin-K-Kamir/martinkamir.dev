@@ -6,7 +6,7 @@ import {
     SelectTrigger,
 } from "@/components/select";
 import { cn } from "@/utils";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 
@@ -30,6 +30,7 @@ export function LangSelect({
     classNameContent?: string;
     variant?: "default" | "circle";
 }) {
+    const t = useTranslations("other");
     const [isPending, startTransition] = useTransition();
     const router = useRouter();
     const localActive = useLocale();
@@ -51,6 +52,7 @@ export function LangSelect({
                     className,
                 )}
                 disabled={isPending}
+                aria-label={t("language_select")}
             >
                 {variant === "default"
                     ? languages[localActive].label

@@ -41,7 +41,7 @@
         },
         "nextjs": {
             "title": "Next.js",
-            "description": "has become my favorite due to its static generation, dynamic routing, and built-in APIs."
+            "description": "one of my favorites, thanks to static generation, dynamic routing, and built-in APIs."
         },
         "tailwindcss": {
             "title": "Tailwind",
@@ -109,7 +109,8 @@
         "present": "present",
         "social_media_links": "Social media links",
         "related_links": "Related links",
-        "related_badges": "Related badges"
+        "related_badges": "Related badges",
+        "language_select": "Language selector"
     },
     "metadata": {
         "title": "Martin Kamír",
