@@ -8,10 +8,10 @@
         "about": {
             "title": "O mně",
             "description": {
-                "p1": "Jsem vývojář zaměřený na tvorbu moderních a dobře fungujících webových aplikací. Moje cesta začala u jednoduché HTML stránky a od té doby se neustále učím, zkouším nové věci a posouvám se dál, abych tvořil skvělé věci.",
+                "p1": "Jsem vývojář zaměřený na tvorbu moderních a dobře fungujících webových aplikací. Moje cesta začala u jednoduché HTML stránky a od té doby se neustále učím, zkouším nové věci a posouvám se dál.",
                 "p2": "Aktuálně pracuji ve společnosti",
                 "p3": ", kde jsem začínal jako junior. Díky praktickým zkušenostem a náročným výzvám jsem se za tu dobu hodně posunul.",
-                "p4": "Tady je tech stack, se kterým momentálně nejraději pracuji:"
+                "p4": "Tohle je můj technologický stack, se kterým momentálně nejraději pracuji:"
             }
         },
         "experience": {
@@ -41,7 +41,7 @@
         },
         "nextjs": {
             "title": "Next.js",
-            "description": "Stal se mým oblíbeným díky statické generaci, dynamickému routingu a vestavěným API."
+            "description": "Patří mezi mé oblíbené, díky statické generaci, dynamickému routingu a vestavěným API."
         },
         "tailwindcss": {
             "title": "Tailwind",
@@ -53,7 +53,7 @@
         },
         "vite": {
             "title": "Vite",
-            "description": "Rád stavím SPAs s Vite. Vývoj je rychlý a plynulý."
+            "description": "Rád tvořím SPAs s Vite. Vývoj je rychlý a plynulý."
         },
         "zustand": {
             "title": "Zustand",
@@ -65,7 +65,7 @@
         },
         "vitest": {
             "title": "Vitest",
-            "description": "Jednoduchý, rychlý a radost používat.ty "
+            "description": "Jednoduchý, rychlý a radost používat"
         },
         "aria_label": "Oblíbené technologie"
     },
@@ -76,29 +76,29 @@
         },
         "iq_group": {
             "title": "Frontend Developer · IQ Group",
-            "description": "Vyvinul jsem frontend pro webovou aplikaci pro IQ testování, s důrazem na výkon, použitelnost a jasnou prezentaci složitých testovacích procesů. Projekt jsem dodal od začátku do konce díky úzké spolupráci s designéry a backendovými vývojáři."
+            "description": "Vyvinul jsem frontend pro platformu IQ testů, s důrazem na výkon, použitelnost a jasnou prezentaci složitých testovacích procesů. Projekt jsem dodal od začátku do konce, díky úzké spolupráci s designéry a backendovými vývojáři."
         }
     },
     "projects": {
         "the_cabs": {
             "title": "The Cabs",
-            "description": "Webová aplikace pro objevování a rezervaci nemovitostí, která pokrývá vše od prohlížení nabídek a správy rezervací až po dokončení celého rezervačního procesu."
+            "description": "Webová aplikace pro objevování a rezervaci nemovitostí. Umožňuje prohlížet nabídky, spravovat rezervace a jednoduše dokončit celý rezervační proces."
         },
         "the_cabs_admin": {
             "title": "The Cabs Admin",
-            "description": "Admin aplikace pro The Cabs, navržená pro správu nemovitostí, rezervací, hostů a admin uživatelů. Umožňuje sledovat statistiky a nadcházející rezervace."
+            "description": "Admin aplikace pro The Cabs určená ke správě nemovitostí, rezervací, hostů a administrátorů. Poskytuje přehled o statistikách a nadcházejících rezervacích."
         },
         "calendar": {
             "title": "Calendar",
-            "description": "Jednoduchá aplikace pro správu událostí, která umožňuje uživatelům vytvářet, aktualizovat a mazat události prostřednictvím čistého a intuitivního rozhraní."
+            "description": "Jednoduchá aplikace kalendáře, která umožňuje uživatelům vytvářet, aktualizovat a mazat události prostřednictvím čistého a intuitivního rozhraní."
         },
         "countries": {
             "title": "Countries",
-            "description": "Webová aplikace pro prozkoumávání zemí. Procházejte, vyhledávejte a filtrujte podle regionu a zobrazte podrobnosti o každé zemi, včetně hlavního města, měn, jazyků a dalších informací."
+            "description": "Webová aplikace pro vyhledávání a prohlížení informací o zemích světa. Umožňuje vyhledávat podle názvu nebo regionu a zobrazit podrobné informace o vybrané zemi."
         },
         "forkify": {
             "title": "Forkify",
-            "description": "Aplikace na recepty pro vyhledávání, prohlížení a ukládání oblíbených jídel. Prozkoumávejte recepty podle názvů a přečtěte si podrobnosti o jejich přípravě."
+            "description": "Jednoduchá aplikace na recepty, která umožňuje uživatelům vyhledávat, prohlížet a ukládat oblíbená jídla. Recepty obsahují podrobné informace o přípravě a postupu."
         }
     },
     "other": {

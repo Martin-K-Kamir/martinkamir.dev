@@ -181,7 +181,7 @@ export const experiences = [
         description:
             "Built the front-end for a custom IQ testing platform, focusing on performance, usability, and clear presentation of complex test flows. Delivered the project end-to-end in close collaboration with designers and backend developers.",
         dateRange: {
-            from: new Date("2025-02-01"),
+            from: new Date("2024-11-01"),
             to: new Date("2025-05-01"),
         },
         url: "https://iq-test.cz",

@@ -15,9 +15,9 @@ export function CursorGlow() {
 
     return (
         <div
-            className="pointer-events-none fixed inset-0 z-30 transition duration-300"
+            className="pointer-events-none fixed inset-0 z-30 opacity-0 transition duration-300 lg:opacity-100"
             style={{
-                background: `radial-gradient(600px at ${coords.x}px ${coords.y}px, rgb(99 102 241 / 5%), transparent 80%)`,
+                background: `radial-gradient(600px at ${coords.x}px ${coords.y}px, rgb(99 102 241 / 7%), transparent 80%)`,
             }}
         ></div>
     );
