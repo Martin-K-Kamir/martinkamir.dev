@@ -52,7 +52,7 @@ export function UserProfile({
                                 href={link.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-3 text-sm font-medium text-zinc-100/95 outline-offset-4 outline-zinc-100/95 transition-colors hover:underline focus-visible:outline-2 [&>svg]:size-4"
+                                className="flex items-center gap-2 text-sm font-medium text-zinc-100/95 outline-offset-4 outline-zinc-100/95 transition-colors hover:underline focus-visible:outline-2 sm:gap-3 [&>svg]:size-4"
                                 aria-label={t("opens_new_tab", {
                                     label: link.label,
                                 })}

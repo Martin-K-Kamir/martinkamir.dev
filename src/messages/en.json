@@ -8,10 +8,10 @@
         "about": {
             "title": "About",
             "description": {
-                "p1": "I'm a developer with a passion for creating beautiful and functional web applications. My journey in web development began with a simple HTML page, and since then I've been constantly learning, experimenting, and pushing myself to build cool stuff.",
+                "p1": "I'm a developer focused on creating modern and well-functioning web applications. My journey started with a simple HTML page, and since then, I've been constantly learning, trying new things, and pushing myself to improve and build cool stuff.",
                 "p2": "Currently, I'm working at",
-                "p3": "I started as a junior and have grown a lot through hands-on experience and tough challenges.",
-                "p4": "Here are the tools I'm most into right now:"
+                "p3": ". I started as a junior and have grown a lot through hands-on experience and tough challenges.",
+                "p4": "Here's my current favorite tech stack:"
             }
         },
         "experience": {
@@ -33,60 +33,60 @@
     "tech_stack": {
         "react": {
             "title": "React",
-            "description": "My go-to for building interactive, component driven UIs."
+            "description": "my go-to for building interactive, component driven UIs."
         },
         "typescript": {
             "title": "Typescript",
-            "description": "Can't live without it. The DX is just unmatched."
+            "description": "I can't imagine working without it. The DX is unmatched."
         },
         "nextjs": {
             "title": "Next.js",
-            "description": "All the power of React with less headache."
+            "description": "has become my favorite due to its static generation, dynamic routing, and built-in APIs."
         },
         "tailwindcss": {
             "title": "Tailwind",
-            "description": "Tried every CSS approach. Tailwind just works and scales as I build."
+            "description": "I've tried every CSS approach, and Tailwind just works and scales as I build."
         },
         "tanstack_query": {
             "title": "TanStack Query",
-            "description": "This is the best way to handle data fetching."
+            "description": "the best tool for handling data fetching."
         },
         "vite": {
             "title": "Vite",
-            "description": "I love building SPAs with Vite, makes it fast and smooth."
+            "description": "I love building SPAs with it. It makes development fast and smooth."
         },
         "zustand": {
             "title": "Zustand",
-            "description": "It's the easiest way to manage state, no need for extra complexity."
+            "description": "the simplest way to manage state without unnecessary complexity."
         },
         "cypress": {
             "title": "Cypress",
-            "description": "Makes testing fun. Watching tests run in real time is so satisfying."
+            "description": "makes testing fun. Watching tests run in real time is incredibly satisfying."
         },
         "vitest": {
             "title": "Vitest",
-            "description": "Simple, fast, and just feels great to use."
+            "description": "simple, fast, and a joy to use."
         },
         "aria_label": "Favorite technologies"
     },
     "experiences": {
         "rondo": {
             "title": "Frontend Developer · Rondo",
-            "description": "Design and develop key parts of the user interface across the product, focusing on performance, and user experience. Collaborate with designers, backend engineers, and product managers to deliver thoughtful, high-quality solutions that support both users and business goals."
+            "description": "Design and develop key parts of the user interface, focusing on performance and user experience. Collaborate with designers, backend engineers, and product managers to deliver thoughtful, high-quality solutions that support both users and business goals."
         },
         "iq_group": {
             "title": "Frontend Developer · IQ Group",
-            "description": "Built the frontend for a custom IQ testing platform, focusing on performance, usability, and clear presentation of complex test flows. Delivered the project end-to-end in close collaboration with designers and backend developers."
+            "description": "Developed the frontend for an IQ testing web app, prioritizing performance, usability, and the clear presentation of intricate testing processes. Delivered the project end-to-end in close collaboration with designers and backend developers."
         }
     },
     "projects": {
         "the_cabs": {
             "title": "The Cabs",
-            "description": "Web app for discovering and booking unique cabins, offering a seamless experience for browsing listings, managing reservations, and ensuring a smooth end-to-end booking process."
+            "description": "Web app for discovering and booking properties, covering everything from browsing listings and managing reservations to completing the full booking process."
         },
         "the_cabs_admin": {
             "title": "The Cabs Admin",
-            "description": "Admin app for managing cabins, bookings, and platform insights through a dedicated admin dashboard built for The Cabs. It offers full CRUD functionality and delivers clear, actionable statistics to help streamline operations."
+            "description": "Admin app for The Cabs, built to manage properties, bookings, guests, and admin users. View booking statistics and track upcoming reservations."
         },
         "calendar": {
             "title": "Calendar",
@@ -94,11 +94,11 @@
         },
         "countries": {
             "title": "Countries",
-            "description": "Web app for exploring countries around the world. Users can browse a complete list of countries, search by name, filter by region, and view detailed information about each country including population, capital, currencies, languages, and neighboring countries."
+            "description": "Web app for exploring countries. Browse, search, and filter by region, and see details about each country, including capital, currencies, languages, and more."
         },
         "forkify": {
             "title": "Forkify",
-            "description": "Recipe app for searching, viewing, and saving your favorite meals. Users can explore a wide range of recipes by name, view detailed cooking instructions and ingredients, and bookmark recipes for quick access anytime."
+            "description": "Recipe app for searching, viewing, and saving favorite meals. Explore recipes by name and view cooking details."
         }
     },
     "other": {
@@ -113,12 +113,12 @@
     },
     "metadata": {
         "title": "Martin Kamír",
-        "description": "I build responsive, type-safe and blazingly fast web apps. Currently working at Rondo."
+        "description": "Martin Kamír is a frontend developer who builds responsive, type-safe, and high-performance web applications with a focus on clean code, seamless user experiences, and scalable solutions."
     },
     "error": {
         "500": {
             "description": "My spaghetti code is not working properly. <br/> Please try again later.",
-            "button": "Try Again"
+            "button": "Try again"
         }
     }
 }

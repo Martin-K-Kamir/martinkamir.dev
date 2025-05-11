@@ -3,15 +3,15 @@
         "hero": {
             "title": "Martin Kamír",
             "subtitle": "Front End Developer",
-            "description": "Stavím <responsive>responzivní</responsive>, <typesafe>type-safe</typesafe> && <fast>extrémně rychlé</fast> webové aplikace."
+            "description": "Tvořím <responsive>responzivní</responsive>, <typesafe>type-safe</typesafe> && <fast>výkonné</fast> webové aplikace."
         },
         "about": {
             "title": "O mně",
             "description": {
-                "p1": "Jsem vývojář s vášní pro tvorbu krásných a funkčních webových aplikací. Moje cesta začala jednoduchou HTML stránkou a od té doby se neustále učím, experimentuji a snažím se tvořit skvělé věci.",
-                "p2": "Aktuálně pracuji ve firmě",
-                "p3": "Začínal jsem jako junior a díky praktickým zkušenostem a náročným výzvám jsem hodně vyrostl.",
-                "p4": "Tady jsou nástroje, které mě teď nejvíc baví:"
+                "p1": "Jsem vývojář zaměřený na tvorbu moderních a dobře fungujících webových aplikací. Moje cesta začala u jednoduché HTML stránky a od té doby se neustále učím, zkouším nové věci a posouvám se dál, abych tvořil skvělé věci.",
+                "p2": "Aktuálně pracuji ve společnosti",
+                "p3": ", kde jsem začínal jako junior. Díky praktickým zkušenostem a náročným výzvám jsem se za tu dobu hodně posunul.",
+                "p4": "Tady je tech stack, se kterým momentálně nejraději pracuji:"
             }
         },
         "experience": {
@@ -28,77 +28,77 @@
         "about": "O mně",
         "experience": "Zkušenosti",
         "projects": "Projekty",
-        "aria_label": "Odkazy pro přeskok na stránce"
+        "aria_label": "Odkazy pro přesun na stránce"
     },
     "tech_stack": {
         "react": {
             "title": "React",
-            "description": "Moje oblíbená knihovna pro tvorbu interaktivního a komponentového UI."
+            "description": "Moje volba číslo jedna pro tvorbu interaktivních, component-driven UIs."
         },
         "typescript": {
             "title": "Typescript",
-            "description": "Nemůžu bez něj být. Developer experience je bezkonkurenční."
+            "description": "Nedám na něj dopustit. DX je prostě nepřekonatelný."
         },
         "nextjs": {
             "title": "Next.js",
-            "description": "Síla Reactu bez zbytečných starostí."
+            "description": "Stal se mým oblíbeným díky statické generaci, dynamickému routingu a vestavěným API."
         },
         "tailwindcss": {
             "title": "Tailwind",
-            "description": "Vyzkoušel jsem všechny přístupy ke stylování. Tailwind prostě funguje a dobře škáluje."
+            "description": "Vyzkoušel jsem všechny CSS přístupy. Tailwind prostě funguje a dobře škáluje."
         },
         "tanstack_query": {
             "title": "TanStack Query",
-            "description": "Nejlepší způsob, jak řešit získávání dat."
+            "description": "Za mě nejlepší nástroj pro managing a fetchování dat."
         },
         "vite": {
             "title": "Vite",
-            "description": "Rád stavím SPAčka s Vite – je to rychlé a plynulé."
+            "description": "Rád stavím SPAs s Vite. Vývoj je rychlý a plynulý."
         },
         "zustand": {
             "title": "Zustand",
-            "description": "Nejjednodušší způsob správy stavu – žádná zbytečná složitost."
+            "description": "Nejjednodušší způsob, jak spravovat stav bez zbytečné složitosti."
         },
         "cypress": {
             "title": "Cypress",
-            "description": "Testování je s ním zábava. Sledovat běh testů v reálném čase je prostě skvělé."
+            "description": "Dělá testování zábavným. Sledování testů v reálném čase je neuvěřitelně uspokojivé."
         },
         "vitest": {
             "title": "Vitest",
-            "description": "Jednoduchý, rychlý a příjemný na používání."
+            "description": "Jednoduchý, rychlý a radost používat.ty "
         },
         "aria_label": "Oblíbené technologie"
     },
     "experiences": {
         "rondo": {
             "title": "Frontend Developer · Rondo",
-            "description": "Navrhuji a vyvíjím klíčové části uživatelského rozhraní napříč produktem se zaměřením na výkon a uživatelskou zkušenost. Spolupracuji s designéry, backend vývojáři a produktovými manažery na doručení promyšlených a kvalitních řešení, která podporují uživatele i obchodní cíle."
+            "description": "Navrhuji a vyvíjím klíčové části uživatelského rozhraní, s důrazem na výkon a uživatelskou zkušenost. Spolupracuji s designéry, backendovými inženýry a produktovými manažery na dodání promyšlených, vysoce kvalitních řešení, která podporují jak uživatele, tak obchodní cíle."
         },
         "iq_group": {
             "title": "Frontend Developer · IQ Group",
-            "description": "Postavil jsem frontend pro vlastní platformu pro IQ testování se zaměřením na výkon, použitelnost a přehledné zobrazení komplexních testovacích toků. Projekt jsem doručil end-to-end ve spolupráci s designéry a backend vývojáři."
+            "description": "Vyvinul jsem frontend pro webovou aplikaci pro IQ testování, s důrazem na výkon, použitelnost a jasnou prezentaci složitých testovacích procesů. Projekt jsem dodal od začátku do konce díky úzké spolupráci s designéry a backendovými vývojáři."
         }
     },
     "projects": {
         "the_cabs": {
             "title": "The Cabs",
-            "description": "Webová aplikace pro objevování a rezervaci unikátních kabin. Nabízí plynulé procházení nabídek, správu rezervací a bezproblémový proces od začátku do konce."
+            "description": "Webová aplikace pro objevování a rezervaci nemovitostí, která pokrývá vše od prohlížení nabídek a správy rezervací až po dokončení celého rezervačního procesu."
         },
         "the_cabs_admin": {
             "title": "The Cabs Admin",
-            "description": "Administrační aplikace pro správu kabin, rezervací a přehledy platformy. Nabízí kompletní CRUD funkcionalitu a přehledné statistiky pro efektivní provoz."
+            "description": "Admin aplikace pro The Cabs, navržená pro správu nemovitostí, rezervací, hostů a admin uživatelů. Umožňuje sledovat statistiky a nadcházející rezervace."
         },
         "calendar": {
             "title": "Calendar",
-            "description": "Jednoduchá kalendářová aplikace. Uživatelé mohou vytvářet, upravovat a mazat události přes čisté a intuitivní rozhraní."
+            "description": "Jednoduchá aplikace pro správu událostí, která umožňuje uživatelům vytvářet, aktualizovat a mazat události prostřednictvím čistého a intuitivního rozhraní."
         },
         "countries": {
             "title": "Countries",
-            "description": "Webová aplikace pro objevování zemí po celém světě. Uživatelé mohou procházet úplný seznam států, hledat podle jména, filtrovat podle regionu a zobrazit podrobné informace jako je populace, hlavní město, měny, jazyky a sousední státy."
+            "description": "Webová aplikace pro prozkoumávání zemí. Procházejte, vyhledávejte a filtrujte podle regionu a zobrazte podrobnosti o každé zemi, včetně hlavního města, měn, jazyků a dalších informací."
         },
         "forkify": {
             "title": "Forkify",
-            "description": "Aplikace s recepty pro vyhledávání, prohlížení a ukládání oblíbených jídel. Uživatelé mohou procházet různé recepty, zobrazit si podrobné postupy a ingredience a ukládat si oblíbené pro pozdější použití."
+            "description": "Aplikace na recepty pro vyhledávání, prohlížení a ukládání oblíbených jídel. Prozkoumávejte recepty podle názvů a přečtěte si podrobnosti o jejich přípravě."
         }
     },
     "other": {
@@ -109,15 +109,15 @@
         "present": "současnost",
         "social_media_links": "Odkazy na sociální sítě",
         "related_links": "Související odkazy",
-        "related_badges": "Související odznaky"
+        "related_badges": "Související štítky"
     },
     "metadata": {
         "title": "Martin Kamír",
-        "description": "Stavím responzivní, type-safe a extrémně rychlé webové aplikace. Aktuálně pracuji v Rondo."
+        "description": "Martin Kamír je frontend developer, který vytváří responzivní, type-safe a výkonné webové aplikace s důrazem na čistý kód, plynulý uživatelský zážitek a škálovatelné řešení."
     },
     "error": {
         "500": {
-            "description": "Můj spaghetti kód nefunguje správně. <br/> Zkuste to prosím později.",
+            "description": "Můj špagetový kód nefunguje správně. <br/> Zkuste to prosím znovu později.",
             "button": "Zkusit znovu"
         }
     }

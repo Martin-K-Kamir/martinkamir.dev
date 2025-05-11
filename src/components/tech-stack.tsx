@@ -55,7 +55,7 @@ export function TechStack({
                                 side: "bottom",
                                 align: "center",
                                 sideOffset: 8,
-                                className: "w-44 text-balance",
+                                className: "w-48 text-pretty",
                             }}
                         >
                             <div>

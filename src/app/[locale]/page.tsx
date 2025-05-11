@@ -74,7 +74,7 @@ export default function Page() {
                             >
                                 Rondo
                             </a>
-                            . {t("about.description.p3")}
+                            {t("about.description.p3")}
                         </p>
                         <p className="text-pretty">
                             {t("about.description.p4")}{" "}

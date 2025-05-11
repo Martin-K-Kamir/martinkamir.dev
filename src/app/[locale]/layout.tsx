@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { CursorGlow } from "@/components/cursor-glow";
+import { Hello } from "@/components/hello";
 import { getTranslations } from "next-intl/server";
 import type { Locale } from "@/types";
 import "./globals.css";
@@ -23,9 +24,32 @@ export async function generateMetadata({ params }: WithParams) {
         namespace: "metadata",
     });
 
+    const title = t("title");
+    const description = t("description");
+
     return {
-        title: t("title"),
-        description: t("description"),
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            type: "website",
+            url: "",
+            siteName: title,
+        },
+        twitter: {
+            card: "summary",
+            title,
+            description,
+            url: "",
+        },
+        meta: {
+            keywords:
+                "Martin Kamír, Frontend Developer, Web Development, React, TypeScript, Next.js, Vite, Zustand, Tailwind CSS, TanStack Query, Cypress, Vitest Portfolio",
+            author: "Martin Kamír",
+            robots: "index, follow",
+            viewport: "width=device-width, initial-scale=1.0",
+        },
     };
 }
 
@@ -47,6 +71,7 @@ export default async function RootLayout({
             >
                 <CursorGlow />
                 <NextIntlClientProvider>{children}</NextIntlClientProvider>
+                <Hello />
             </body>
         </html>
     );
