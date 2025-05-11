@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { CursorGlow } from "@/components/cursor-glow";
 import { getTranslations } from "next-intl/server";
-import type { Metadata } from "next";
 import type { Locale } from "@/types";
 import "./globals.css";
 
