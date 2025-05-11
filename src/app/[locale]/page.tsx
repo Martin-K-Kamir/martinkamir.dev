@@ -21,7 +21,7 @@ export default function Page() {
         <div className="mx-auto grid min-h-svh max-w-7xl px-6 pb-24 pt-12 md:px-12 md:pb-28 md:pt-16 lg:grid-cols-[minmax(0,_1fr)_minmax(54ch,_1.1fr)] lg:gap-6 lg:py-0">
             <a
                 href="#content"
-                className="absolute left-0 top-0 block -translate-x-full rounded-lg bg-zinc-50 px-4 py-3 text-sm font-bold uppercase tracking-widest text-zinc-950 outline-none focus-visible:translate-x-0"
+                className="absolute -left-2 top-0 block -translate-x-full rounded-lg bg-zinc-50 px-4 py-3 text-sm font-bold uppercase tracking-widest text-zinc-950 outline-none focus-visible:left-0 focus-visible:translate-x-0"
             >
                 {t("other.skip_to_content")}
             </a>
@@ -50,7 +50,7 @@ export default function Page() {
                 className="space-y-18 pt-18 sm:space-y-28 sm:pt-24 lg:py-24"
                 id="content"
             >
-                <section className="scroll-mt-24" id="about">
+                <section className="scroll-mt-16" id="about">
                     <StickyHeader>
                         <h2 className="text-sm font-bold uppercase tracking-widest text-zinc-50/95 lg:sr-only">
                             {t("about.title")}
@@ -84,7 +84,7 @@ export default function Page() {
                     </div>
                 </section>
 
-                <section className="scroll-mt-24" id="experience">
+                <section className="scroll-mt-16" id="experience">
                     <StickyHeader>
                         <h2 className="text-sm font-bold uppercase tracking-widest text-zinc-50/95 lg:sr-only">
                             {t("experience.title")}
@@ -98,7 +98,7 @@ export default function Page() {
                     />
                 </section>
 
-                <section className="scroll-mt-24" id="projects">
+                <section className="scroll-mt-16" id="projects">
                     <StickyHeader>
                         <h2 className="text-sm font-bold uppercase tracking-widest text-zinc-50/95 lg:sr-only">
                             {t("projects.title")}
