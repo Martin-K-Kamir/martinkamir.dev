@@ -8,9 +8,9 @@
         "about": {
             "title": "O mně",
             "description": {
-                "p1": "Jsem vývojář zaměřený na tvorbu moderních a dobře fungujících webových aplikací. Moje cesta začala u jednoduché HTML stránky a od té doby se neustále učím, zkouším nové věci a posouvám se dál.",
+                "p1": "Jsem vývojář zaměřený na tvorbu moderních a efektivně fungujících webových aplikací. Moje cesta začala u jednoduché HTML stránky a od té doby se neustále učím, zkouším nové věci a zdokonaluji se dál.",
                 "p2": "Aktuálně pracuji ve společnosti",
-                "p3": ", kde jsem začínal jako junior. Díky praktickým zkušenostem a náročným výzvám jsem se za tu dobu hodně posunul.",
+                "p3": ", kde jsem začínal jako junior dev. Praktické zkušenosti a náročné výzvy mě za tu dobu výrazně posunuly dál.",
                 "p4": "Tohle je můj technologický stack, se kterým momentálně nejraději pracuji:"
             }
         },
@@ -33,7 +33,7 @@
     "tech_stack": {
         "react": {
             "title": "React",
-            "description": "Moje volba číslo jedna pro tvorbu interaktivních, component-driven UIs."
+            "description": "Moje volba číslo jedna pro tvorbu interaktivních component-driven UIs."
         },
         "typescript": {
             "title": "Typescript",
@@ -76,7 +76,7 @@
         },
         "iq_group": {
             "title": "Frontend Developer · IQ Group",
-            "description": "Vyvinul jsem frontend pro platformu IQ testů, s důrazem na výkon, použitelnost a jasnou prezentaci složitých testovacích procesů. Projekt jsem dodal od začátku do konce, díky úzké spolupráci s designéry a backendovými vývojáři."
+            "description": "Vyvinul jsem frontend pro platformu IQ testů se zaměřením na použitelnost a jasnou prezentaci složitých testovacích procesů. Projekt jsem zpracoval od začátku do konce díky úzké spolupráci s designéry a backendovými vývojáři."
         }
     },
     "projects": {
