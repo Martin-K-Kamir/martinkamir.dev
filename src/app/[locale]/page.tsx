@@ -50,7 +50,7 @@ export default function Page() {
                 className="space-y-18 pt-18 sm:space-y-28 sm:pt-24 lg:py-24"
                 id="content"
             >
-                <section className="scroll-mt-16" id="about">
+                <section className="scroll-mt-10" id="about">
                     <StickyHeader>
                         <h2 className="text-sm font-bold uppercase tracking-widest text-zinc-50/95 lg:sr-only">
                             {t("about.title")}
@@ -84,7 +84,7 @@ export default function Page() {
                     </div>
                 </section>
 
-                <section className="scroll-mt-16" id="experience">
+                <section className="scroll-mt-10" id="experience">
                     <StickyHeader>
                         <h2 className="text-sm font-bold uppercase tracking-widest text-zinc-50/95 lg:sr-only">
                             {t("experience.title")}
@@ -98,7 +98,7 @@ export default function Page() {
                     />
                 </section>
 
-                <section className="scroll-mt-16" id="projects">
+                <section className="scroll-mt-10" id="projects">
                     <StickyHeader>
                         <h2 className="text-sm font-bold uppercase tracking-widest text-zinc-50/95 lg:sr-only">
                             {t("projects.title")}
