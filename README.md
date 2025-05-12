@@ -8,6 +8,7 @@ The design of this site was inspired by [Brittany Chiang's site](https://brittan
 
 - **React**
 - **Next.js**
+- **Next-intl**
 - **TypeScript**
 - **Tailwind CSS**
 - **ESLint**
