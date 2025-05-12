@@ -33,7 +33,7 @@
     "tech_stack": {
         "react": {
             "title": "React",
-            "description": "my go-to for building interactive, component driven UIs."
+            "description": "My go-to for building interactive, component driven UIs."
         },
         "typescript": {
             "title": "Typescript",
@@ -41,7 +41,7 @@
         },
         "nextjs": {
             "title": "Next.js",
-            "description": "one of my favorites, thanks to static generation, dynamic routing, and built-in APIs."
+            "description": "One of my favorites, thanks to static generation, dynamic routing, and built-in APIs."
         },
         "tailwindcss": {
             "title": "Tailwind",
@@ -49,7 +49,7 @@
         },
         "tanstack_query": {
             "title": "TanStack Query",
-            "description": "the best tool for handling data fetching."
+            "description": "The best tool for handling data fetching."
         },
         "vite": {
             "title": "Vite",
@@ -57,15 +57,15 @@
         },
         "zustand": {
             "title": "Zustand",
-            "description": "the simplest way to manage state without unnecessary complexity."
+            "description": "The simplest way to manage state without unnecessary complexity."
         },
         "cypress": {
             "title": "Cypress",
-            "description": "makes testing fun. Watching tests run in real time is incredibly satisfying."
+            "description": "Makes testing fun. Watching tests run in real time is incredibly satisfying."
         },
         "vitest": {
             "title": "Vitest",
-            "description": "simple, fast, and a joy to use."
+            "description": "Simple, fast, and a joy to use."
         },
         "aria_label": "Favorite technologies"
     },

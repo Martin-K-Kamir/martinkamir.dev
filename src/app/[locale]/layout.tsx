@@ -34,14 +34,14 @@ export async function generateMetadata({ params }: WithParams) {
             title,
             description,
             type: "website",
-            url: "",
+            url: "https://www.martinkamir.dev",
             siteName: title,
         },
         twitter: {
             card: "summary",
             title,
             description,
-            url: "",
+            url: "https://www.martinkamir.dev",
         },
         meta: {
             keywords:
