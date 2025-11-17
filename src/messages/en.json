@@ -9,9 +9,7 @@
             "title": "About",
             "description": {
                 "p1": "I'm a developer focused on creating modern and well-functioning web applications. My journey started with a simple HTML page, and since then, I've been constantly learning, trying new things, and pushing myself to improve and build cool stuff.",
-                "p2": "Currently, I'm working at",
-                "p3": ". I started as a junior dev and have grown a lot through hands-on experience and tough challenges.",
-                "p4": "Here's my current favorite tech stack:"
+                "p2": "Here's my current favorite tech stack:"
             }
         },
         "experience": {
@@ -70,13 +68,17 @@
         "aria_label": "Favorite technologies"
     },
     "experiences": {
+        "mibcon": {
+            "title": "Frontend Developer · Mibcon",
+            "description": "I contribute to the development of complex applications for large organizations, ensuring their functionality for end users."
+        },
         "rondo": {
             "title": "Frontend Developer · Rondo",
-            "description": "Design and develop key parts of the user interface, focusing on performance and user experience. Collaborate with designers, backend engineers, and product managers to deliver thoughtful, high-quality solutions that support both users and business goals."
+            "description": "I worked on a web application offering interactive games and competitions to users in several countries."
         },
         "iq_group": {
             "title": "Frontend Developer · IQ Group",
-            "description": "Developed the frontend for an IQ testing web app, prioritizing performance, usability, and the clear presentation of intricate testing processes. Delivered the project end-to-end in close collaboration with designers and backend developers."
+            "description": "I developed an IQ testing platform, focusing on clear presentation of test steps and reliable application performance."
         }
     },
     "projects": {

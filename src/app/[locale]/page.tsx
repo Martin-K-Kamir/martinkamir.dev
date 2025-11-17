@@ -15,7 +15,6 @@ export function generateStaticParams() {
 
 export default function Page() {
     const t = useTranslations("page");
-    const tOther = useTranslations("other");
 
     return (
         <div className="mx-auto grid min-h-svh max-w-7xl px-6 pb-24 pt-12 md:px-12 md:pb-28 md:pt-16 lg:grid-cols-[minmax(0,_1fr)_minmax(54ch,_1.1fr)] lg:gap-6 lg:py-0">
@@ -62,22 +61,7 @@ export default function Page() {
                             {t("about.description.p1")}
                         </p>
                         <p className="text-pretty">
-                            {t("about.description.p2")}{" "}
-                            <a
-                                href="https://www.rondo.cz/hra"
-                                className="font-medium text-zinc-50/95 outline-offset-4 outline-zinc-100/95 hover:underline focus-visible:outline-2"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={tOther("opens_new_tab", {
-                                    label: "Rondo",
-                                })}
-                            >
-                                Rondo
-                            </a>
-                            {t("about.description.p3")}
-                        </p>
-                        <p className="text-pretty">
-                            {t("about.description.p4")}{" "}
+                            {t("about.description.p2")}
                         </p>
 
                         <TechStack />

@@ -155,24 +155,24 @@ export const projects = [
 
 export const experiences = [
     {
-        intlKey: "rondo",
+        intlKey: "mibcon",
         namespace: "experiences",
-        title: "Frontend Developer · Rondo",
-        description:
-            "Design and develop key parts of the user interface across the product, focusing on performance, and user experience. Collaborate with designers, backend engineers, and product managers to deliver thoughtful, high-quality solutions that support both users and business goals.",
+        title: "Frontend Developer · Mibcon",
+        description: "asdasd",
         dateRange: {
-            from: new Date("2021-11-01"),
+            from: new Date("2025-06-16"),
         },
         badges: [
+            "Nextjs",
             "React",
-            "Redux",
-            "React Router",
-            "Javascript",
             "Typescript",
-            "SCSS",
-            "Tailwind CSS",
+            "TanStack Query",
+            "Storybook",
+            "Playwright",
+            "React Hook Form",
+            "React Testing Library",
         ],
-        url: "https://www.rondo.cz",
+        url: "https://mibcon.cz",
     },
     {
         intlKey: "iq_group",
@@ -191,13 +191,24 @@ export const experiences = [
             "TanStack Query",
             "React Router",
             "React Hook Form",
-            "Zod",
             "Tailwind CSS",
-            "Shadcn UI",
             "Vite",
             "Cypress",
             "Vitest",
             "React Testing Library",
         ],
+    },
+    {
+        intlKey: "rondo",
+        namespace: "experiences",
+        title: "Frontend Developer · Rondo",
+        description:
+            "Design and develop key parts of the user interface across the product, focusing on performance, and user experience. Collaborate with designers, backend engineers, and product managers to deliver thoughtful, high-quality solutions that support both users and business goals.",
+        dateRange: {
+            from: new Date("2021-11-01"),
+            to: new Date("2025-06-01"),
+        },
+        badges: ["React", "Redux", "React Router", "Javascript", "SCSS"],
+        url: "https://www.rondo.cz",
     },
 ];

@@ -9,9 +9,7 @@
             "title": "O mně",
             "description": {
                 "p1": "Jsem vývojář zaměřený na tvorbu moderních a efektivně fungujících webových aplikací. Moje cesta začala u jednoduché HTML stránky a od té doby se neustále učím, zkouším nové věci a stále se zdokonaluji.",
-                "p2": "Aktuálně pracuji ve společnosti",
-                "p3": ", kde jsem začínal jako junior dev. Praktické zkušenosti a náročné výzvy mě za tu dobu výrazně posunuly dál.",
-                "p4": "Tohle je můj technologický stack, se kterým momentálně nejraději pracuji:"
+                "p2": "Tohle je můj technologický stack, se kterým momentálně nejraději pracuji:"
             }
         },
         "experience": {
@@ -70,13 +68,17 @@
         "aria_label": "Oblíbené technologie"
     },
     "experiences": {
+        "mibcon": {
+            "title": "Frontend Developer · Mibcon",
+            "description": "Podílím se na vývoji komplexních aplikací pro velké organizace a zajišťuji jejich funkčnost pro koncové uživatele."
+        },
         "rondo": {
             "title": "Frontend Developer · Rondo",
-            "description": "Navrhuji a vyvíjím klíčové části uživatelského rozhraní, s důrazem na výkon a uživatelskou zkušenost. Spolupracuji s designéry, backendovými inženýry a produktovými manažery na dodání promyšlených, vysoce kvalitních řešení, která podporují jak uživatele, tak obchodní cíle."
+            "description": "Pracoval jsem na webové aplikaci, která nabízela interaktivní hry a soutěže uživatelům v několika zemích."
         },
         "iq_group": {
             "title": "Frontend Developer · IQ Group",
-            "description": "Vyvinul jsem frontend pro platformu IQ testů se zaměřením na použitelnost a jasnou prezentaci složitých testovacích procesů. Projekt jsem zpracoval od začátku do konce díky úzké spolupráci s designéry a backendovými vývojáři."
+            "description": "Vyvíjel jsem IQ testovací platformu, s důrazem na přehledné zpracování testovacích kroků a spolehlivé fungování aplikace."
         }
     },
     "projects": {
