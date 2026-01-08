@@ -13,14 +13,19 @@ const geistSans = Inter({
     subsets: ["latin"],
 });
 
-type WithParams = {
-    params: Promise<{ locale: Locale }>;
-};
+export function generateStaticParams() {
+    return routing.locales.map((locale): { locale: Locale } => ({ locale }));
+}
 
-export async function generateMetadata({ params }: WithParams) {
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
     const { locale } = await params;
+    const typedLocale = locale as Locale;
     const t = await getTranslations({
-        locale,
+        locale: typedLocale,
         namespace: "metadata",
     });
 
@@ -58,14 +63,16 @@ export default async function RootLayout({
     params,
 }: {
     children: React.ReactNode;
-} & WithParams) {
+    params: Promise<{ locale: string }>;
+}) {
     const { locale } = await params;
-    if (!hasLocale(routing.locales, locale)) {
+    const typedLocale = locale as Locale;
+    if (!hasLocale(routing.locales, typedLocale)) {
         notFound();
     }
 
     return (
-        <html lang={locale} className="scroll-smooth">
+        <html lang={typedLocale} className="scroll-smooth">
             <body
                 className={`${geistSans.variable} bg-zinc-950 text-zinc-50 antialiased`}
             >
