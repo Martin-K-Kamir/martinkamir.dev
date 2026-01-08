@@ -47,7 +47,7 @@
     },
     "projects": {
         "clone_gpt": {
-            "title": "Clone GPT",
+            "title": "CloneGPT",
             "description": "ChatGPT klon aplikace. Umožňuje konverzace s AI v reálném čase, nahrávání souborů, správu historie konverzací a sdílení chatů."
         },
         "the_cabs": {

@@ -47,7 +47,7 @@
     },
     "projects": {
         "clone_gpt": {
-            "title": "Clone GPT",
+            "title": "CloneGPT",
             "description": "ChatGPT clone app. Enables real-time AI conversations, file uploads, chat history management, and chat sharing."
         },
         "the_cabs": {
