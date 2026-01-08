@@ -1,11 +1,48 @@
+import { Link } from "lucide-react";
 import calendarImage from "@/assets/images/calendar-preview.png";
 import countriesImage from "@/assets/images/countries-preview.png";
 import forkifyImage from "@/assets/images/forkify-preview.png";
 import theCabsImage from "@/assets/images/the-cabs-preview.png";
 import theCabsAdminImage from "@/assets/images/the-cabs-admin-preview.png";
-import { Link } from "lucide-react";
+import cloneGptImage from "@/assets/images/clone-gpt-preview.png";
 
 export const projects = [
+    {
+        intlKey: "clone_gpt",
+        namespace: "projects",
+        title: "Clone GPT",
+        description:
+            "ChatGPT clone app. Enables real-time AI conversations, file uploads, chat history management, and chat sharing.",
+        image: {
+            src: cloneGptImage,
+            alt: "Clone GPT",
+        },
+        badges: [
+            "React",
+            "Nextjs",
+            "Typescript",
+            "TanStack Query",
+            "Tailwind CSS",
+            "Supabase",
+        ],
+        url: "https://clone-gpt-mkk.vercel.app/",
+        otherUrls: [
+            {
+                href: "https://github.com/Martin-K-Kamir/clone-gpt",
+                namespace: "other",
+                intlKey: "repository",
+                label: "Repository",
+                icon: <Link />,
+            },
+            {
+                href: "https://clone-gpt-storybook-mkk.netlify.app",
+                namespace: "other",
+                intlKey: "storybook",
+                label: "Storybook",
+                icon: <Link />,
+            },
+        ],
+    },
     {
         intlKey: "the_cabs",
         namespace: "projects",
@@ -21,10 +58,8 @@ export const projects = [
             "Nextjs",
             "Typescript",
             "TanStack Query",
-            "Zod",
-            "Zustand",
             "Tailwind CSS",
-            "Shadcn UI",
+            "Supabase",
         ],
         url: "https://the-cabs.vercel.app",
         otherUrls: [
@@ -52,11 +87,8 @@ export const projects = [
             "Typescript",
             "TanStack Query",
             "React Router",
-            "React Hook Form",
-            "Zod",
-            "Zustand",
             "Tailwind CSS",
-            "Shadcn UI",
+            "Supabase",
             "Vite",
         ],
         url: "https://the-cabs-admin.vercel.app",
@@ -84,11 +116,9 @@ export const projects = [
             "React",
             "Typescript",
             "Tailwind CSS",
-            "Shadcn UI",
             "Vite",
             "Cypress",
             "Vitest",
-            "React Testing Library",
         ],
         url: "https://calendar-clone-mkk.netlify.app",
         otherUrls: [
@@ -139,7 +169,7 @@ export const projects = [
             src: forkifyImage,
             alt: "Forkify",
         },
-        badges: ["React", "Redux & RTK Query", "React Router", "CSS", "Vite"],
+        badges: ["React", "Redux & RTK Query", "React Router", "Vite"],
         url: "https://forkify-martinkamir.netlify.app",
         otherUrls: [
             {
@@ -168,9 +198,8 @@ export const experiences = [
             "Typescript",
             "TanStack Query",
             "Storybook",
+            "Nestjs",
             "Playwright",
-            "React Hook Form",
-            "React Testing Library",
         ],
         url: "https://mibcon.cz",
     },
@@ -190,12 +219,10 @@ export const experiences = [
             "Typescript",
             "TanStack Query",
             "React Router",
-            "React Hook Form",
             "Tailwind CSS",
             "Vite",
             "Cypress",
             "Vitest",
-            "React Testing Library",
         ],
     },
     {

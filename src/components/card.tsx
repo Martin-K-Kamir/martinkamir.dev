@@ -211,7 +211,7 @@ export function CardLinks({
 
     return (
         <ul
-            className={cn("relative z-10", className)}
+            className={cn("relative z-10 space-y-1.5", className)}
             aria-label={t("other.related_links")}
             {...props}
         >

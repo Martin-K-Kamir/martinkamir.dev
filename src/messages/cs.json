@@ -29,42 +29,6 @@
         "aria_label": "Odkazy pro přesun na stránce"
     },
     "tech_stack": {
-        "react": {
-            "title": "React",
-            "description": "Moje volba číslo jedna pro tvorbu interaktivních component-driven UIs."
-        },
-        "typescript": {
-            "title": "Typescript",
-            "description": "Nedám na něj dopustit. DX je prostě nepřekonatelný."
-        },
-        "nextjs": {
-            "title": "Next.js",
-            "description": "Patří mezi mé oblíbené, díky statické generaci, dynamickému routingu a vestavěným API."
-        },
-        "tailwindcss": {
-            "title": "Tailwind",
-            "description": "Vyzkoušel jsem všechny CSS přístupy. Tailwind prostě funguje a dobře škáluje."
-        },
-        "tanstack_query": {
-            "title": "TanStack Query",
-            "description": "Za mě nejlepší nástroj pro managing a fetchování dat."
-        },
-        "vite": {
-            "title": "Vite",
-            "description": "Rád tvořím SPAs s Vite. Vývoj je rychlý a plynulý."
-        },
-        "zustand": {
-            "title": "Zustand",
-            "description": "Nejjednodušší způsob, jak spravovat stav bez zbytečné složitosti."
-        },
-        "cypress": {
-            "title": "Cypress",
-            "description": "Dělá testování zábavným. Sledování testů v reálném čase je neuvěřitelně uspokojivé."
-        },
-        "vitest": {
-            "title": "Vitest",
-            "description": "Jednoduchý, rychlý a radost používat"
-        },
         "aria_label": "Oblíbené technologie"
     },
     "experiences": {
@@ -82,6 +46,10 @@
         }
     },
     "projects": {
+        "clone_gpt": {
+            "title": "Clone GPT",
+            "description": "ChatGPT klon aplikace. Umožňuje konverzace s AI v reálném čase, nahrávání souborů, správu historie konverzací a sdílení chatů."
+        },
         "the_cabs": {
             "title": "The Cabs",
             "description": "Webová aplikace pro objevování a rezervaci nemovitostí. Umožňuje prohlížet nabídky, spravovat rezervace a jednoduše dokončit celý rezervační proces."
@@ -107,6 +75,7 @@
         "portrait": "Portrét",
         "opens_new_tab": "Zobrazit {label} (otevře se v nové záložce)",
         "repository": "Repozitář",
+        "storybook": "Storybook",
         "preview_image": "Náhledový obrázek",
         "present": "současnost",
         "social_media_links": "Odkazy na sociální sítě",
