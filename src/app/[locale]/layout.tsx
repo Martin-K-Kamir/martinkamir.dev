@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
@@ -79,6 +80,7 @@ export default async function RootLayout({
                 <CursorGlow />
                 <NextIntlClientProvider>{children}</NextIntlClientProvider>
                 <Hello />
+                <Analytics />
             </body>
         </html>
     );
